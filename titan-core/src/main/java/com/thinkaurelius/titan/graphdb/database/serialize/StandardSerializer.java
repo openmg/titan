@@ -120,6 +120,8 @@ public class StandardSerializer implements AttributeHandler, Serializer {
         registerClassInternal(65,Instant.class, new InstantSerializer());
         registerClassInternal(66,StandardTransactionId.class, new StandardTransactionIdSerializer());
 
+        registerClassInternal(1024,HashMap.class,new HashMapSerializer());
+
     }
 
     @Override
